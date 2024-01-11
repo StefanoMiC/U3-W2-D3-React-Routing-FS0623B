@@ -8,6 +8,7 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import NotFound from "./components/NotFound";
 import Menu from "./components/Menu";
 import PastaDetails from "./components/PastaDetails";
+import ClassComponent from "./components/ClassComponent";
 // import Counter from "./components/Counter";
 
 // import Alert from "react-bootstrap/Alert"; //import specifico
@@ -44,6 +45,7 @@ function App() {
           il parametro dinamico può avere un valore qualsiasi, purché esista
           */}
           <Route path="/menu/dettagli/:pastaId" element={<PastaDetails />} />
+          <Route path="/class-component/:dynamicId" element={<ClassComponent className="mt-5" />} />
           <Route path="*" element={<NotFound />} />
         </Routes>
       </BrowserRouter>
